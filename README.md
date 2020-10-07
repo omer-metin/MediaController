@@ -28,7 +28,7 @@ After this process, computer should be restarted.
 If you want to build application your own you need follow below instructions:
     
 #### Dependencies
-You need [pynput 1.6.8](https://pypi.org/project/pynput/1.6.8/). Other versions of pynput unfortunately does not work with pyinstaller. To get pynput 1.6.8 you can use following command
+ - You need [pynput 1.6.8](https://pypi.org/project/pynput/1.6.8/). Other versions of pynput unfortunately does not work with pyinstaller. To get pynput 1.6.8 you can use following command
     ```bash
         pip install pynput==1.6.8
     ```
