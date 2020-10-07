@@ -4,35 +4,41 @@
 
 ## Usage
 You can run application in two ways:
- - Running mediaController.exe file which is located `.\build\exe.win-amd64-3.7`.
+ - Running MediaController.exe file which is located `.\dist`.
  - Running mediaController.py file as python file.
 
 Short-Cuts:
- * **fn + space**  : play-pause media
- * **fn + right**  : next media
- * **fn + left**   : previous media
- * **fn + up**     : volume up
- * **fn + down**   : volume down
- * **fn + 'm'**    : mute-unmute volume
+ * **pause/break**              : play-pause media
+ * **fn + right**               : next media
+ * **fn + left**                : previous media
+ * **fn + up or fn + '+'**      : volume up
+ * **fn + down or fn + '-'**    : volume down
+ * **fn + '0'**                 : mute-unmute volume
 
 ## Installation
 
 ### Run at Windows start-up
 If you want to run application at windows start-up you should follow below steps:
-    
- - Create a short-cut of `.\build\exe.win-amd64-3.7\mediaController.exe`
- - Copy(or cut) created short-cut and paste it in `[X]:\Users\\[user_name]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+
+ - Copy(or cut) MediaController.exe file from `./dist` and paste it in `[X]:\Users\\[user_name]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 
 After this process, computer should be restarted.
 
 ### Build your own
 If you want to build application your own you need follow below instructions:
     
- - You need cx_Freeze to build applticaiton. cx_Freeze can be downloaded by using [pip](https://cx-freeze.readthedocs.io/en/latest/)
+#### Dependencies
+You need [pynput 1.6.8](https://pypi.org/project/pynput/1.6.8/). Other versions of pynput unfortunately does not work with pyinstaller. To get pynput 1.6.8 you can use following command
     ```bash
-        pip install cx-Freeze
+        pip install pynput==1.6.8
     ```
- - To build run following command on command-promt in directory where code is located.
+
+#### Building
+ - You need pyinstaller to build applticaiton. pyinstaller can be downloaded by using [pip](https://pypi.org/project/pyinstaller/)
     ```bash
-        python setup.py build
+        pip install pyinstaller
+    ```
+ - To build, run setup_onefile.bat file or following command on command-promt in directory where code is located.
+    ```bash
+        pyinstaller --onefile --noconsole mediaContolelr.py
     ```

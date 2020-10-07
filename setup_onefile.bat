@@ -1,3 +1,3 @@
 @ECHO OFF
-pyinstaller --onefile --noconsole mediaController.py
+pyinstaller --onefile --noconsole --name=MediaController mediaController.py
 PAUSE
