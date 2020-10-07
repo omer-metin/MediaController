@@ -1,1 +1,4 @@
 demo*
+build
+dist
+__pycache__
