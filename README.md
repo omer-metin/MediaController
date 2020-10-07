@@ -20,7 +20,7 @@ Short-Cuts:
 ### Run at Windows start-up
 If you want to run application at windows start-up you should follow below steps:
 
- - Copy(or cut) MediaController.exe file from `./dist` and paste it in `[X]:\Users\\[user_name]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+ - Copy(or cut) MediaController.exe file from `./dist` and paste it in `[X]:\Users\[user_name]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 
 After this process, computer should be restarted.
 
